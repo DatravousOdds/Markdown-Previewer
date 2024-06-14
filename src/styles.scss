@@ -3,6 +3,7 @@ $secondaryColor: #5b5c5c;
 $defaultText: #fff;
 $centerElement: 0 auto;
 $fontFamily: 'Arial', sans-serif;
+$black-1: #000;
 
 
 * {
@@ -21,17 +22,48 @@ background-color: $primaryColor;
 main {
 
   .container {
-    background-color: $defaultText;
+    background-color: #333332;
     width: 500px;
-    height: 130px;
+    height: 230px;
     margin: $centerElement;
     margin-top: 1rem;
+    border: 2px solid $black-1;
+    box-shadow: 1px 1px 10px $black-1;
+    
+    
     // padding: 5px;
 
     header {
-      border: 2px solid red;
+      border-bottom: 1px solid black;
       width: 100%;
-      display: flex;
+      font-size: 12px;
+      padding: 3px 3px;
+      height: 30px;
+      background-color: $secondaryColor;
+
+      img {
+
+        width: 20px;
+        // margin-left: 0.5rem;
+        
+      }
+
+      .hdr {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        
+
+        .icon {
+          margin-left: auto;
+        }
+
+        .editor {
+          margin: 0 3px;
+          color: white;
+        }
+        
+      }
     }
     
   }

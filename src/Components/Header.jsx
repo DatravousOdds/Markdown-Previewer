@@ -4,13 +4,12 @@ const Header = () => {
   };
   return (
     <header>
-      <div>
-        <img src="#" alt="Logo" />
-        <h1 style={testStyles}>Editor</h1>
-      </div>
+      <div className="hdr">
+        <img src="public/favicon.svg" alt="Logo" />
 
-      <div>
-        <i className="fa-solid fa-expand"></i>
+        <h3 className="editor" style={testStyles}>Editor</h3>
+
+        <h3  className="icon"style={{ color: "black" }}>Icon</h3>
       </div>
     </header>
   );
