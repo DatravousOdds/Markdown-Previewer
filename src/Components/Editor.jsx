@@ -1,12 +1,16 @@
 import Header from  "./Header";
-import { useState } from "react";
-const Editor = () => {
-  const [text, setText] = useState("");
+
+const Editor = ({text, setText }) => {
+  
+  const handleChange = (e) => {
+    
+    setText(e.target.value);
+  }
   return (
     <>
       <div className="container">
         < Header title={"Editor"}/>
-        <textarea id="editor"></textarea>
+        <textarea value={text} onChange={handleChange} id="editor"></textarea>
       </div>
     </>
   );

@@ -4,6 +4,7 @@ $defaultText: #fff;
 $centerElement: 0 auto;
 $fontFamily: 'Arial', sans-serif;
 $black-1: #000;
+$padding-1: 0.55rem;
 
 
 * {
@@ -78,9 +79,23 @@ main {
 
     textarea {
       width: 100%;
+      background-color: transparent;
+      border: transparent;
       resize: vertical;
+      overflow-y: auto;
+      height:200px;
+      padding: 0.55rem;
+      color: $defaultText;
+      
     }
     
+  }
+
+  .container.wider-width {
+
+    #preview {
+      padding: $padding-1;
+    }
   }
   
 }
