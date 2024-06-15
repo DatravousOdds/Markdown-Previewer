@@ -1,17 +1,22 @@
-const Header = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExpand } from "@fortawesome/free-solid-svg-icons";
+
+const Header = ({title}) => {
   const testStyles = {
-    color: "red",
+    color: "white",
   };
   return (
     <header>
       <div className="hdr">
         <img src="public/favicon.svg" alt="Logo" />
-
-        <h3 className="editor" style={testStyles}>Editor</h3>
-
-        <h3  className="icon"style={{ color: "black" }}>Icon</h3>
+        <h3 className="editor" style={testStyles}>
+          {title}
+        </h3>
+        <FontAwesomeIcon className="icon" icon={faExpand} />
       </div>
     </header>
+    
+    
   );
 };
 

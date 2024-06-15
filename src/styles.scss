@@ -21,10 +21,15 @@ background-color: $primaryColor;
 
 main {
 
+  .wider-width {
+    width: 600px !important;
+    
+  }
+  
   .container {
     background-color: #333332;
     width: 500px;
-    height: 230px;
+    // height: 230px;
     margin: $centerElement;
     margin-top: 1rem;
     border: 2px solid $black-1;
@@ -35,6 +40,7 @@ main {
 
     header {
       border-bottom: 1px solid black;
+      box-shadow: 0px 0px 4px $black-1;
       width: 100%;
       font-size: 12px;
       padding: 3px 3px;
@@ -56,6 +62,8 @@ main {
 
         .icon {
           margin-left: auto;
+          padding-right: 0.25rem;
+        
         }
 
         .editor {
@@ -64,6 +72,13 @@ main {
         }
         
       }
+
+      
+    }
+
+    textarea {
+      width: 100%;
+      resize: vertical;
     }
     
   }

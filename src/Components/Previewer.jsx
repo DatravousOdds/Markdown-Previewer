@@ -1,8 +1,13 @@
+import Header from './Header';
 const Previewer = () => {
   return (
     <>
-      <div className="pre-container">
-
+      <div className="container wider-width">
+        <Header title={"Previewer"}/>
+        <div className='pre' id="preview">
+        
+        </div>
+        
       </div>
     </>
   );
