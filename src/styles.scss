@@ -94,8 +94,32 @@ main {
   .container.wider-width {
 
     #preview {
-      padding: $padding-1;
+      padding: 2rem;
+      
     }
+  }
+
+  pre {
+    // border: 1px solid red;
+    border-radius: 12px;
+    padding: 0.55rem;
+    background-color:#4D4D4B;
+    margin: 10px 0;
+  }
+
+  p, h1 {
+    margin: 10px 0;
+  }
+
+  code {
+    background-color: #4D4D4B;
+    border-radius: 4px;
+    padding:2px;
+    
+  }
+
+  a {
+    color: purple;
   }
   
 }

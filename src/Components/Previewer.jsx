@@ -1,24 +1,23 @@
-import Header from './Header';
+import Header from "./Header";
 
-
-const Previewer = ({text}) => {
-  const preHeader = "Welcome my React Markdown Previewer!";
-  const headerStyles = {
-    fontSize: "1.5rem",
-    textAlign: "left",
-    color: "white",
-    padding: "0.4rem",
-  }
+const Previewer = ({ text }) => {
+  const renderMarkdown = (markdown) => {
+    if (window.marked) {
+      return { __html: window.marked.parse(markdown) };
+    }
+    return { __html: markdown };
+  };
   return (
     <>
       <div className="container wider-width">
-        <Header title={"Previewer"}/>
-        <div className='pre' id="preview">
-          <h1 style={headerStyles}>{preHeader}</h1>
-          <hr></hr>
-          <p>{text}</p>
-        </div>
+        <Header title={"Previewer"} />
+        <div
+          className="pre"
+          id="preview"
+          dangerouslySetInnerHTML={renderMarkdown(text)}
+        >
         
+        </div>
       </div>
     </>
   );
