@@ -1,4 +1,4 @@
-import Rect from 'react'
+
 import Header from "./Header";
 
 const Editor = ({ text, setText }) => {
