@@ -1,17 +1,52 @@
-## Running React on Replit
+# Markdown Previewer
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+A real-time markdown preview application built as part of the FreeCodeCamp Front End Development Libraries certification. This project allows users to input markdown text and see the formatted HTML output instantly.
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+## Project Overview
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+This Markdown Previewer was developed using Replit and serves as a practical tool for:
+- Converting markdown syntax to HTML in real-time
+- Learning markdown formatting
+- Previewing markdown documentation before publishing
 
-### Getting Started
-- Hit run
-- Edit [App.jsx](#src/App.jsx) and watch it live update!
+## Built With
+* HTML
+* CSS
+* JavaScript
+* React
+* Replit (Development Environment)
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+## Features
+- Real-time markdown to HTML conversion
+- Support for:
+  - Headers
+  - Lists
+  - Links
+  - Code blocks
+  - Images
+  - Blockquotes
+- Responsive design
+- User-friendly interface
 
-### Typescript
+## FreeCodeCamp Project Requirements Met
+- User Story #1: I can see a textarea element with a corresponding id="editor"
+- User Story #2: I can see an element with a corresponding id="preview"
+- User Story #3: When I enter text into the #editor element, the #preview element is updated as I type to display the content of the textarea
+- User Story #4: When I enter GitHub flavored markdown into the #editor element, the text is rendered as HTML in the #preview element
+- User Story #5: When my markdown previewer first loads, the default text in the #editor field should contain valid markdown
 
-Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+## Development Environment
+This project was developed using [Replit](https://replit.com), providing a streamlined coding experience with:
+- Integrated development environment
+- Real-time preview
+- Easy sharing and collaboration
+
+## Links
+- [Live Demo](your-replit-link)
+- [FreeCodeCamp Project Requirements](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer)
+
+## Learning Outcomes
+- React state management
+- Real-time DOM updates
+- Markdown parsing
+- Frontend library integration
